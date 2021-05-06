@@ -2,4 +2,20 @@
 
 .component {
   padding: $base-size;
+  font-family: "Roboto";
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+}
+
+.h2 {
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: inherit !important;
+  color: #4caf50;
+  font-weight: bold;
 }

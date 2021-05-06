@@ -8,13 +8,13 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 
-const demoContent = [
+const demoWaiter = [
   {id: '1', status: 'free', order: null},
   {id: '2', status: 'thinking', order: null},
-  {id: '3', status: 'ordered', order: 123},
-  {id: '4', status: 'prepared', order: 234},
-  {id: '5', status: 'delivered', order: 345},
-  {id: '6', status: 'paid', order: 456},
+  {id: '3', status: 'ordered', order: '#123'},
+  {id: '4', status: 'prepared', order: '#234'},
+  {id: '5', status: 'delivered', order: '#345'},
+  {id: '6', status: 'paid', order: '#456'},
 ];
 
 const renderActions = status => {
@@ -63,7 +63,7 @@ const Waiter = () => (
         </TableRow>
       </TableHead>
       <TableBody>
-        {demoContent.map(row => (
+        {demoWaiter.map(row => (
           <TableRow key={row.id}>
             <TableCell component="th" scope="row">
               {row.id}

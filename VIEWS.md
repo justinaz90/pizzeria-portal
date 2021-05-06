@@ -17,10 +17,10 @@
   - tabela z listą rezerwacji oraz wydarzeń
     - kazda kolumna = 1 stolik
     - kazdy wiersz = 30 minut
-    - ma przypominać widok tygodnia w kalendarzu Google, gdzie w kolumnach zamiast dni są róne stoliki
+    - ma przypominać widok tygodnia w kalendarzu Google, gdzie w kolumnach zamiast dni są rózne stoliki
     - po kliknięciu rezerwacji lub eventu, przechodzimy na stronę szczegółów
 - `/tables/booking/:id`
-  - zawiera wszystkie informacje dotyczące informacji
+  - zawiera wszystkie informacje dotyczące rezerwacji
   - umozliwia edycję i zapisanie zmian
 - `/tables/booking/new`
   - analogicznie do powyzszej, bez początkowych informacji
@@ -39,7 +39,7 @@
 - `/waiter/order/new`
   - numer stolika (edytowalny)
   - menu produktów
-  - opcje wybranego porduktu
+  - opcje wybranego produktu
   - zamówienie (zamówione produkty z opcjami i ceną)
   - kwota zamówienia
 - `/waiter/order/:id`

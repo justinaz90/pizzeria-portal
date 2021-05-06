@@ -3,3 +3,18 @@
 .component {
   padding: $base-size;
 }
+
+.booked {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: #ba000d;
+  flex-wrap: wrap;
+}
+
+.free {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: #4caf50;
+}

@@ -68,7 +68,7 @@ export default function TablesEventsNew () {
               KeyboardButtonProps={{
                 'aria-label': 'change date',
               }}
-            />   
+            />
             <KeyboardTimePicker
               disableToolbar
               margin="normal"
@@ -81,22 +81,22 @@ export default function TablesEventsNew () {
                 'aria-label': 'change time',
               }}
               keyboardIcon={<AccessTimeIcon />}
-            /> 
+            />
           </Grid>
         </MuiPickersUtilsProvider>
       </div>
       <div className={classes.root}>
         <TextField
           required
-          id="outlined-basic" 
-          label="Full name" 
+          id="outlined-basic"
+          label="Full name"
           variant="outlined"
           className={clsx(classes.margin, classes.textField)}
         />
         <TextField
           required
-          id="outlined-basic" 
-          label="Contact" 
+          id="outlined-basic2"
+          label="Contact"
           variant="outlined"
           className={clsx(classes.margin, classes.textField)}
         />
@@ -140,8 +140,8 @@ export default function TablesEventsNew () {
       </div>
 
       <div className={classes.root}>
-        <Button 
-          variant="contained" 
+        <Button
+          variant="contained"
           color="primary"
           size="large"
           type="submit"

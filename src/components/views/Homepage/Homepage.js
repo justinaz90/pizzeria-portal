@@ -13,8 +13,8 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 const demoHomepageOrders = [
-  {type: 'Local', number: '23'},
-  {type: 'Delivery', number: '16'},
+  {type: 'Local', number: 23},
+  {type: 'Delivery', number: 16},
 ];
 
 const useRowStyles = makeStyles({
@@ -29,7 +29,7 @@ function createData(booking) {
   return {
     booking,
     details: [
-      { date: '2021-05-05', hour: '12:30', table: 1, people: 3 },
+      { date: '2021-05-05', hour: '12:30', table: '1', people: 3 },
     ],
   };
 }
@@ -57,7 +57,7 @@ function Row(props) {
     <React.Fragment>
       <TableRow className={classes.root}>
         <TableCell>
-          <IconButton className={styles.button} aria-label="expand row" disableFocusRipple="true" size="small" onClick={() => setOpen(!open)}>
+          <IconButton className={styles.button} aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             {row.booking}
           </IconButton>
@@ -131,7 +131,7 @@ const Homepage = () => (
     <Table aria-label="collapsible table">
       <TableBody>
         {rows.map((row) => (
-          <Row key={row.type} row={row} />
+          <Row key={row.booking} row={row} />
         ))}
       </TableBody>
     </Table>

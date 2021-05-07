@@ -46,28 +46,28 @@ export default function TablesBookingId () {
             </TableRow>
           </TableHead>
           <TableBody>
-            {demoBookingId.map(row => (
-              <TableRow key={row.booking}>
+            {demoBookingId.map(bookingId => (
+              <TableRow key={bookingId}>
                 <TableCell>
-                  {row.table}
+                  {bookingId.table}
                 </TableCell>
                 <TableCell>
-                  {row.date}
+                  {bookingId.date}
                 </TableCell>
                 <TableCell>
-                  {row.time}
+                  {bookingId.time}
                 </TableCell>
                 <TableCell>
-                  {row.duration}
+                  {bookingId.duration}
                 </TableCell>
                 <TableCell>
-                  {row.people}
+                  {bookingId.people}
                 </TableCell>
                 <TableCell>
-                  {row.starters}
+                  {bookingId.starters}
                 </TableCell>
                 <TableCell>
-                  {row.contact}
+                  {bookingId.contact}
                 </TableCell>
               </TableRow>
             ))}
@@ -75,18 +75,18 @@ export default function TablesBookingId () {
         </Table>
 
         <div className={classes.root}>
-          <Button 
+          <Button
             className={classes.button}
-            variant="contained" 
+            variant="contained"
             color="primary"
             size="large"
             type="submit"
           >
             Edit booking
           </Button>
-          <Button 
+          <Button
             className={classes.button}
-            variant="contained" 
+            variant="contained"
             color="primary"
             size="large"
             type="submit"
